@@ -1,6 +1,5 @@
-os: 
- - osx
- - osx_image: xcode9.1
+os: osx
+osx_image: xcode9.1
 language: csharp
 solution: jsreport.Binary.OSX.sln
 mono: none
