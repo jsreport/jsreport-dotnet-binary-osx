@@ -45,4 +45,8 @@
     <PackageReference Include="System.IO.Compression" Version="4.3.0" />
   </ItemGroup>
 
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="Powershell.exe -ExecutionPolicy ByPass -File download.ps1" />
+  </Target>
+
 </Project>
