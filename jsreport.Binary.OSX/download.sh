@@ -1,5 +1,5 @@
 ﻿#download the binary from github and zip it as expected by c#
-wget https://github.com/jsreport/jsreport/releases/download/2.5.0/jsreport-osx.tar.gz 
+wget https://github.com/jsreport/jsreport/releases/download/2.6.1/jsreport-osx.tar.gz 
 tar -xzf jsreport-osx.tar.gz 
 mv jsreport jsreport.exe 
 zip jsreport-new.zip ./jsreport.exe
