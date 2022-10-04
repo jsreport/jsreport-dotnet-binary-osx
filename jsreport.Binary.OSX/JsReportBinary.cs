@@ -19,11 +19,7 @@ namespace jsreport.Binary.OSX
             var assembly = typeof(JsReportBinary).GetTypeInfo().Assembly;
 
             return new ReportingBinary("default-osx-" + assembly.GetName().Version.ToString(),
-                () =>
-                {
-                    var zip = new ZipArchive(assembly.GetManifestResourceStream("jsreport.Binary.OSX.jsreport.zip"));
-                    return zip.Entries.First().Open();
-                });
+                () => assembly.GetManifestResourceStream("jsreport.Binary.OSX.jsreport.zip"), true);
         }
     }
 }
